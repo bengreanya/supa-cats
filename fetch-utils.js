@@ -9,3 +9,8 @@ export async function getAllCats() {
     const response = await client.from('myCats').select();
     return response.data;
 }
+
+export async function getCat(id) {
+    const response = await client.from('myCats').select().match({ id: id }).single();
+    return response.data;
+}
