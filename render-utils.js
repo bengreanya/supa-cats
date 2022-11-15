@@ -11,3 +11,19 @@ export function renderCard(cat) {
 
     return catEl;
 }
+
+export function renderCatDetail(catObject) {
+    const div = document.createElement('div');
+    const nameEl = document.createElement('p');
+    const ageEl = document.createElement('p');
+    const hairEl = document.createElement('p');
+    const moodEl = document.createElement('p');
+
+    nameEl.textContent = catObject.name;
+    ageEl.textContent = catObject.age;
+    hairEl.textContent = catObject.hair;
+    moodEl.textContent = catObject.mood;
+
+    div.append(nameEl, ageEl, hairEl, moodEl);
+    return div;
+}
