@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <!-- title and favicon -->
-        <title>Supa Cats</title>
+        <title id="supa-cats">Supa Cats</title>
         <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
         <!-- js -->
@@ -15,26 +15,25 @@
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="detail.js"></script>
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
 
         <!-- css -->
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
         <!-- add link for page specific css -->
-        <link href="styles/style.css" />
     </head>
 
     <body>
         <header>
-            <h1>My Supa Cats</h1>
+            <h1>My Supa Cats Details</h1>
         </header>
 
         <main>
-            <div id="cats-container"></div>
-            <p class="cat-name"></p>
+            <a href="../">Home</a>
+            <div id="cat-detail-container"></div>
         </main>
     </body>
 </html>
