@@ -4,10 +4,10 @@ import { renderCatDetail } from '../render-utils.js';
 const catDetailContainer = document.getElementById('cat-detail-container');
 
 window.addEventListener('load', async () => {
-    const params = URLSearchParams(window.location.search);
+    const params = new URLSearchParams(window.location.search, '.search');
     const id = params.get('id');
 
-    const cat = await getCat(cat);
+    const cat = await getCat(id);
     const catDetailEl = renderCatDetail(cat);
     catDetailContainer.append(catDetailEl);
 });
