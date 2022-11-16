@@ -1,6 +1,6 @@
 export function renderCard(cat) {
     const catEl = document.createElement('a');
-    catEl.href = ``;
+    catEl.href = `./detail/?id=${cat.id}`;
     catEl.classList.add('cat-card');
 
     const nameEl = document.createElement('p');
